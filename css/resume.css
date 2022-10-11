@@ -1,0 +1,86 @@
+html,button,input,select,textarea{
+    color:#444;
+    font-family: garamond-premier-pro, serif;
+    font-style: normal;
+    font-weight: 400;
+   
+}
+html{
+    font-size: 1em;
+    line-height: 1.4;
+    background-color: rgb(229, 235, 235);
+}
+
+#wrapper {
+ margin: 0px auto;
+ max-width: 900px;
+ min-width: 320px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+
+img{
+    display: block;
+    margin-left: auto;
+    border: 1px solid #ccc;
+    }
+       
+header{
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0, 0, 0.2);
+    
+}
+
+.name{
+    font-family: albiona, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+
+section{
+    display: block;
+    border-radius: 30px;
+    background-color: rgb(240, 255, 251);
+    border: white solid;
+
+
+}
+
+#profil{
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: -40px;
+    background-color: #f0eeee;
+    border: white solid;
+}
+
+footer{
+    align-items: center;
+    text-align: center;
+}
+
+#footer{
+    color: #000;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 30px;
+  }
+
+  #date{
+    text-indent: 5%;
+  }
+
+  p{
+    text-indent: 10%;
+  }
+
+  .name{
+    text-align: center;
+  }
+
+
+ 
