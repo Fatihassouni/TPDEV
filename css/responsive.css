@@ -1,0 +1,41 @@
+@media only screen and (max-width:740px){
+  /*  #wrapper{background: #f77;}*/
+    #profil{
+        width: 50%;
+        display: block;
+        border-radius: 30px;
+        overflow-y: scroll;
+        align-items: center;
+        margin: 0px auto;
+        margin-top: -40px;
+        
+    }
+}
+
+@media only screen and (max-width:570px){
+   /* #wrapper{background: #7f7;}*/
+    #profil{
+        width: 50%;
+        display: block;
+        border-radius: 30px;
+        overflow-y: scroll;
+        align-items: center;
+        margin: 0px auto;
+        margin-top: -40px;
+        
+    }
+}
+
+@media only screen and (max-width:480px){
+   /* #wrapper{background: #77f;}*/
+    #profil{
+        width: 50%;
+        display: block;
+        border-radius: 30px;
+        overflow-y: scroll;
+        align-items: center;
+        margin: 0px auto;
+        margin-top: -40px;
+        
+    }
+}

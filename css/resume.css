@@ -50,13 +50,13 @@ section{
 
 #profil{
     display: block;
-    align-items: center;
     text-align: center;
     margin-left: 250px;
     margin-right: 250px;
     margin-top: -40px;
     background-color: #f0eeee;
     border: white solid;
+    
 }
 
 footer{
