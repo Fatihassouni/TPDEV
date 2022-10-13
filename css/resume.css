@@ -94,3 +94,19 @@ footer{
   }
 
  
+  .couponcode:hover .coupontooltip {
+    display: block;
+}
+
+.coupontooltip {
+    display: none;
+    background: #C8C8C8;
+    margin-left: 28px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+}
+
+.couponcode {
+    margin:10px;
+}

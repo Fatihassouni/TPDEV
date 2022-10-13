@@ -30,9 +30,25 @@ function alterner(id){
 */
 
 //afficher tooltip
-$(document).ready(function(){
+/*$(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
   });
+*/
+
+
+ //Tooltip dynamique
+var tooltip = document.querySelectorAll('.coupontooltip');
+
+document.addEventListener('mousemove', fn, false);
+
+function fn(e) {
+    for (var i=tooltip.length; i--;) {
+        tooltip[i].style.left = e.pageX + 'px';
+        tooltip[i].style.top = e.pageY + 'px';
+    }
+}
+
+
 
  //affichage des details 
   function getElementBtn(id){
@@ -92,4 +108,3 @@ function sizein(el, time) {
   tick();
 }      
    
-
