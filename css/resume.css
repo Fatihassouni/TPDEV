@@ -82,6 +82,23 @@ footer{
     text-align: center;
   }
 
-  
+
+
+  #moreText1{
+    display: none;
+    
+  }
+  #moreText2{
+    display: none;
+    
+  }
+
+  .star:hover{
+    cursor: pointer;
+  }
+
+  .star_rating{
+    user-select: none;
+  }
 
  

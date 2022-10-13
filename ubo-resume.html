@@ -11,10 +11,15 @@
     <meta name="author" content="HASSOUNI Fatima-Ezzahra"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/resume.css"/>
+    <script src="js/javascript.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/responsive.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- [if It IE 9]>
                 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
 </head>
 <body>
     <div id="wrapper">
@@ -125,13 +130,23 @@
 
                     <dd>
                         <p>Projet Fin d'Année-Spring Boot & VueJs: Petroleum Maroc-Agadir </p>
-                        <p><b>Thème:</b> Mise en oeuvre d’une application de gestion des bornes de</p>
-                        <p>recharges des voitures éléctriques.</p>
+                        <button   id="btn1" onclick="Btn_Toggle('moreText1','moreText2','btn1','btn2')" >
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <span id="moreText1">
+                            <p>
+                                <b>Thème:</b>
+                                Mise en oeuvre d’une application de gestion des bornes de
+                            </p>
+                            <p>recharges des voitures éléctriques.
+
+                            </p>
+                        </span>
                     </dd>
                 </dl>
             </div>
 
-            <div>
+            <div class="trigger">
                 <dl>
                     <dt>
                         <h4 id="date">11/10/2021-04/01/2022</h4>
@@ -139,21 +154,11 @@
 
                     <dd>
                         <p>Projet Web - Spring & React </p>
-                        <p><b>Thème:</b> Plateforme de communication et partage entre les etudiants</p>
-                        <p>les diplomés de la genie informatique-ENSA AGADIR.</p>
-                    </dd>
-                </dl>
-            </div>
-
-            <div>
-                <dl>
-                    <dt>
-                        <h4 id="date">14/07/2021-11/08/2021</h4>
-                    </dt>
-
-                    <dd>
-                        <p>Stage d’Application - Laravel: NEOXIA Maroc-Casablanca </p>
-                        <p><b>Thème:</b> Marketplace de soutien scolaire pour une association.</p>
+                        <button id="btn2" onclick="Btn_Toggle('moreText2','moreText1','btn2','btn1')">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>        
+                        <div id="moreText2"><p><b>Thème:</b> Plateforme de communication et partage entre les etudiants</p>
+                        <p>les diplomés de la genie informatique-ENSA AGADIR.</p></div>
                     </dd>
                 </dl>
             </div>
@@ -169,8 +174,8 @@
                         <h4 id="date">Langage de Programmation</h4>
                     </dt>
                     <ul>
-                        <li>Java</li>
-                        <li>HTML & CSS</li>
+                        <li data-toggle="tooltip" title="un des langages de programmation les plus reputé">Java</li>
+                        <li >HTML & CSS</li>  <!--onmouseover="show()" onmouseout="hide()" title="hello"-->
                         <li>PHP</li>
                         <li>Maple & Matlab</li>
                         <li>Js</li>
@@ -186,7 +191,14 @@
                     </dt>
 
                     <ul>
-                        <li>Merise</li>
+                        
+                        <li class="star_rating">
+                            <button  class="star">&#9734;</button>
+                            <button  class="star">&#9734;</button>
+                            <button  class="star">&#9734;</button>
+                            <button  class="star">&#9734;</button>
+                            Merise
+                        </li>
                         <li>UML</li>
                         
                     </ul>
