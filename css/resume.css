@@ -93,12 +93,4 @@ footer{
     
   }
 
-  .star:hover{
-    cursor: pointer;
-  }
-
-  .star_rating{
-    user-select: none;
-  }
-
  
