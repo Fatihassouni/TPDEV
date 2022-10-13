@@ -108,3 +108,80 @@ function sizein(el, time) {
   tick();
 }      
    
+
+function  evaluerConnaissance(){
+    let competences = document.querySelectorAll("li.rating");
+    try {
+        for(let i=0; i < competences.length; i++){
+            let r = competences[i].getAttribute("rating");
+
+            if(r!=null){
+
+                let starts = '<span style="color:#eeee6a; " >' 
+
+                for(let j=0; j< r; j++){
+                    starts+="★";
+                }
+                starts += '</span>';
+
+                starts += '<span>';
+                for(let j=r; j<5; j++){
+                    starts+="★";
+                }
+                starts += '</span>';
+
+                competences[i].innerHTML += starts;
+
+            }
+
+        }
+        console.log("error")
+    } catch (error) {
+        console.log(error)
+    }
+}
+evaluerConnaissance();
+
+
+//histogramme
+mesCompetence={
+    "java":5,
+    "HTML & CSS":5,
+    "PHP":4,
+    "Maple & Matlab":4,
+    "Merise":5,
+    "UML":5,
+    "Agile":5,
+    "Linux":4,
+    "Windows":5
+}
+
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: Object.keys(mesCompetence),
+    datasets: [{
+      label: 'Competences',
+      data: Object.values(mesCompetence),
+      backgroundColor: 'rgba(180, 180, 180)',
+    }]
+  },
+  options: {
+    scales: {
+      xAxes: [{
+        display: true,
+        barPercentage: 1.2, 
+     }],
+      yAxes: [{
+        ticks: {
+          max: 5,
+          beginAtZero:true,
+          stepSize: 1
+        },
+        stacked: true
+
+      }]
+    }
+  }
+});

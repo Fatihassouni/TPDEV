@@ -173,11 +173,11 @@
                         <h4 id="date">Langage de Programmation</h4>
                     </dt>
                     <ul>
-                        <li >Java</li>
-                        <li  >HTML & CSS</li>  <!--onmouseover="show()" onmouseout="hide()" title="hello"-->
+                        <li class="rating" rating="5">Java</li>
+                        <li class="rating" rating="5" >HTML & CSS</li>  <!--onmouseover="show()" onmouseout="hide()" title="hello"-->
                                                                        <!--data-toggle="tooltip" title="les bases du Developpement web"-->
-                        <li  >PHP</li>
-                        <li   >Maple & Matlab</li>
+                        <li class="rating" rating="4" >PHP</li>
+                        <li  class="rating" rating="4" >Maple & Matlab</li>
                     </ul>
                    
                     
@@ -191,10 +191,10 @@
 
                     <ul>
                         
-                        <li   >
+                        <li  class="rating" rating="5" >
                             Merise
                         </li>
-                        <li   >UML</li>
+                        <li  class="rating" rating="5" >UML</li>
                         
                     </ul>
                 </dl>
@@ -206,7 +206,7 @@
                     </dt>
 
                     <ul>
-                        <li   >Agile</li>
+                        <li  class="rating" rating="5" >Agile</li>
                     </ul>
                 </dl>
             </div>
@@ -217,12 +217,15 @@
                     </dt>
 
                     <ul>
-                        <li   >Linux</li>
-                        <li    >Windows</li>
+                        <li  class="rating" rating="4" >Linux</li>
+                        <li  class="rating" rating="5"  >Windows</li>
                         
                     </ul>
                 </dl>
             </div>
+
+            <canvas id="myChart" width="20" height="10"></canvas>
+
          </section>
          <br>
          <br>
@@ -275,6 +278,7 @@
         </footer>
     </div>
  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <script src="js/javascript.js"></script>
     
 </body>
