@@ -135,9 +135,7 @@ function  evaluerConnaissance(){
             }
 
         }
-        console.log("error")
-    } catch (error) {
-        console.log(error)
+      } catch (error) {
     }
 }
 evaluerConnaissance();
@@ -164,7 +162,7 @@ var myChart = new Chart(ctx, {
     datasets: [{
       label: 'Competences',
       data: Object.values(mesCompetence),
-      backgroundColor: 'rgba(180, 180, 180)',
+      backgroundColor: 'rgb(67, 135, 151)',
     }]
   },
   options: {

@@ -18,18 +18,31 @@ html{
  margin-left: auto;
  margin-right: auto;
 }
-
+ 
+table{
+  margin:auto;
+  table-layout: auto;
+}
 
 img{
     display: block;
     margin-left: auto;
-    border: 1px solid #ccc;
+    border: 2px solid black;
+    width: 8cm;
+    height:8cm;
+    border-radius: 80%;
+    border-color: bolder #000;
     }
+.coordonées{
+font-style: inherit;
+font-size: larger;
+}
        
 header{
     border-radius: 20px;
-    background-color: white;
+    background-color:#59a9b5 ;
     box-shadow: 0 2px 4px rgba(0,0, 0, 0.2);
+    
     
 }
 
@@ -42,8 +55,8 @@ header{
 section{
     display: block;
     border-radius: 30px;
-    background-color: rgb(240, 255, 251);
-    border: white solid;
+    background-color: #e2f3f9;
+    border: black solid;
 
 
 }
@@ -54,8 +67,8 @@ section{
     margin-left: 250px;
     margin-right: 250px;
     margin-top: -40px;
-    background-color: #f0eeee;
-    border: white solid;
+    background-color: #59a9b5 ;
+  border: black solid;
     
 }
 
@@ -72,10 +85,16 @@ footer{
 
   #date{
     text-indent: 5%;
+    font-weight: bolder ;
   }
 
   p{
     text-indent: 10%;
+    font-size: larger;
+  }
+
+  li{
+    font-size: larger;
   }
 
   .name{
@@ -114,6 +133,17 @@ footer{
 canvas{
   max-width: 500px;
   margin: 0 auto;
-  color: #000;
   
+}
+
+#table2{
+  width: 70%;
+}
+
+#section2{
+  display: block;
+  text-align: center;
+  margin-top: -40px;
+  background-color: #59a9b5;
+  border: black solid;
 }

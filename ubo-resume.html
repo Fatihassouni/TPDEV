@@ -25,31 +25,43 @@
        
         <header>
            <!-- <i class="fa fa-camera-retro"></i>-->
+           <table>
+           <tr>
+            <td>
             <h1 class="name">HASSOUNI FATIMA-EZZAHRA</h1>
             <h2 class="name">Etudiante -Développement logiciels- </h2>
-            <img class="displayed" src="/home/dosi/Bureau/profile.jpg" alt="">
+        </td>
+        <td>
+            <img class="displayed" src="fati.jpeg">
+        </td>
+        </tr>
+        </table>
             <!--<p><i class="fa fa-envelope"></i> fatima.ezzahra.hassouni2000@gmail.com</p>
             <p><i class="fa fa-location-arrow"></i> 4 Rue des Archives, 209200, Brest</p>
             <p><i class="fa fa-calendar"></i> 12 Avril 2000</p>
             <p><i class="fa fa-globe"></i> Marocaine</p>-->
-            <div  itemscope itemtype="https://schema.org/Person">
-                <p  itemprop="address"><i class="fa fa-location-arrow"></i>4 Rue des Archives</p>
-                <p  itemprop="birthDate"><i class="fa fa-calendar"></i>12 Avril 2000</p>
+            <div class="coordonées" itemscope itemtype="https://schema.org/Person">
+                <p  itemprop="address"><i class="fa fa-location-arrow"></i> 4 Rue des Archives</p>
+                <p  itemprop="birthDate"><i class="fa fa-calendar"></i> 12 Avril 2000</p>
                 <p  itemprop="email"><i class="fa fa-envelope"></i> fatima.ezzahra.hassouni2000@gmail.com</p>
                 <p  itemprop="nationality"><i class="fa fa-globe"></i> Marocaine</p>
             </div>
         </header>
         <br>
         <br>
-        <section>
+        <section class="all">
             <section id="profil"><h3>Profil</h3></section>
+            <br>
             <p>
-                Etudiante en deuxième année master Developpement lOgiciel des Systèmes d'Informations
+                
+                    Etudiante en deuxième année master Developpement lOgiciel des Systèmes d'Informations
+                
             </p>
+            <br>
         </section>
         <br>
         <br>
-        <section>
+        <section class="all">
             <section id="profil"><h3>Etudes & Formations</h3></section>
             <div>
                 <dl>
@@ -124,14 +136,14 @@
             <div>
                 <dl>
                     <dt>
-                        <h4 id="date">14/02/2022-30/05/2022</h4>
+                        <h4 id="date"> <button   id="btn1" onclick="Btn_Toggle('moreText1','moreText2','btn1','btn2')" >
+                            <i class="fa-solid fa-plus"></i>
+                        </button> 14/02/2022-30/05/2022</h4>
                     </dt>
 
                     <dd>
                         <p>Projet Fin d'Année-Spring Boot & VueJs: Petroleum Maroc-Agadir </p>
-                        <button   id="btn1" onclick="Btn_Toggle('moreText1','moreText2','btn1','btn2')" >
-                            <i class="fa-solid fa-plus"></i>
-                        </button>
+                        
                         <span id="moreText1">
                             <p>
                                 <b>Thème:</b>
@@ -148,14 +160,15 @@
             <div class="trigger">
                 <dl>
                     <dt>
-                        <h4 id="date">11/10/2021-04/01/2022</h4>
+                        <h4 id="date"><button id="btn2" onclick="Btn_Toggle('moreText2','moreText1','btn2','btn1')">
+                            <i class="fa-solid fa-plus"></i>
+                        </button> 11/10/2021-04/01/2022 </h4>
+                         
                     </dt>
 
                     <dd>
                         <p>Projet Web - Spring & React </p>
-                        <button id="btn2" onclick="Btn_Toggle('moreText2','moreText1','btn2','btn1')">
-                            <i class="fa-solid fa-plus"></i>
-                        </button>        
+                               
                         <div id="moreText2"><p><b>Thème:</b> Plateforme de communication et partage entre les etudiants</p>
                         <p>les diplomés de la genie informatique-ENSA AGADIR.</p></div>
                     </dd>
@@ -164,7 +177,7 @@
         </section>
         <br>
         <br>
-        <section>
+        <section class="all">
             <section id="profil"> <h3>Connaissances</h3> </section>
         
             <div>
@@ -230,43 +243,61 @@
          <br>
          <br>
         <div class="conteneur">
-        <section>
-            <div class="droite">
-                <dl>
-                    <dt>
-                        <section id="profil">   <h3>Langues</h3> </section>
-                    </dt>
-
-                    <ul>
-                        <li class="couponcode">Arabe
-                            <span class="coupontooltip">langues maternel</span>
-                        </li>
-                        <li class="couponcode">Français
-                            <span class="coupontooltip">Niveau Delf B2</span>
-                        </li>
-                        <li class="couponcode">Anglais
-                            <span class="coupontooltip">Courant</span>
-                        </li>
-                    </ul>
-                </dl>
-            </div>
-        </section>
+            <table id="table2">
+                <tr>
+                    <td width="50%">
+                        <section>
+                            <div class="droite">
+                                <dl>
+                                    <dt>
+                                        <section id="section2"><h3> Langues</h3> </section>
+                                    </dt>
+                
+                                    <ul>
+                                        <li class="couponcode">Arabe
+                                            <span class="coupontooltip">langues maternel</span>
+                                        </li>
+                                        <li class="couponcode">Français
+                                            <span class="coupontooltip">Niveau Delf B2</span>
+                                        </li>
+                                        <li class="couponcode">Anglais
+                                            <span class="coupontooltip">Courant</span>
+                                        </li>
+                                    </ul>
+                                </dl>
+                            </div>
+                        </section>
+                    
+                    </td>
+                    <td width="50%">
+                        <section>
+                            <div class="gauche">
+                                <dl>
+                                    <dt>
+                                        <section id="section2"><h3> Centres d'interet</h3></section>
+                                    </dt>
+                
+                                    <ul>
+                                        <li  class="couponcode">Sport
+                                            <span class="coupontooltip">Course</span>
+                                        </li>
+                                        <li  class="couponcode">lecture
+                                            <span class="coupontooltip">Psychologie</span>
+                                        </li>
+                                        <li  class="couponcode">Voyage
+                                            <span class="coupontooltip">Aventure et découverte</span>
+                                        </li>
+                                    </ul>
+                                </dl>
+                            </div>
+                        </section>
+                    </td>
+                </tr>
+            </table>
+        
         <br>
         <br>
-        <section>
-            <div class="gauche">
-                <dl>
-                    <dt>
-                        <section id="profil"><h3>Centres d'interet</h3></section>
-                    </dt>
-
-                    <ul>
-                        <li>Sport</li>
-                        <li>lecture</li>
-                    </ul>
-                </dl>
-            </div>
-        </section>
+        
         </div>  
         <br>
 
